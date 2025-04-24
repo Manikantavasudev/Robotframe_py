@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-24T15:21:57.468695" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\GRL\PycharmProjects\Robotframwork\TestCaes\TC1.robot">
+<test id="s1-t1" name="LoginTest" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-24T15:21:57.732307" level="INFO">Opening browser 'chrome' to base url 'https://invescomutualfund.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-24T15:21:57.731908" elapsed="4.721170"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-24T15:22:02.453399" elapsed="0.029525"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-24T15:22:05.484399" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-24T15:22:02.483259" elapsed="3.001466"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-24T15:22:05.485093" elapsed="2.193775"/>
+</kw>
+<doc>Open Invesco website and close browser</doc>
+<status status="PASS" start="2025-04-24T15:21:57.730678" elapsed="9.948467"/>
+</test>
+<status status="PASS" start="2025-04-24T15:21:57.479649" elapsed="10.199992"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC1" id="s1" pass="1" fail="0" skip="0">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

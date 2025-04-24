@@ -1,17 +1,17 @@
 *** Settings ***
-Library  SeleniumLibrary
-
+Library    SeleniumLibrary
 
 *** Variables ***
-
-
+${URL}    https://invescomutualfund.com/
+${BROWSER}    chrome
 
 *** Test Cases ***
 LoginTest
-    open browser    https://demo.nopcommerce.com/   chrome
+    [Documentation]    Open Invesco website and close browser
+    Open Browser    ${URL}    ${BROWSER}
+    Maximize Browser Window
+    Sleep    3s
+    Close Browser
 
 
-
-*** keywords ***
-
-
+*** Keywords ***
